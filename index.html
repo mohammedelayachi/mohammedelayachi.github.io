@@ -121,6 +121,101 @@
       box-shadow: 0 15px 35px rgba(0,0,0,0.08);
     }
 
+    /* Cartes Certifications 3D */
+    .cert-card-3d {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+    }
+
+    .cert-card-3d:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 20px 35px rgba(15, 23, 42, 0.1);
+    }
+
+    .cert-icon-box {
+      width: 55px;
+      height: 55px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-right: 18px;
+      flex-shrink: 0;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    }
+
+    /* Badges Soft Skills & Loisirs */
+    .soft-skill-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+      border: 1px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .soft-skill-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      border-color: var(--accent-cyan);
+    }
+
+    .soft-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: #e0f2fe;
+      color: #0284c7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
+    .hobby-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+      border: 1px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      border-color: #f43f5e;
+    }
+
+    .hobby-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: #ffe4e6;
+      color: #e11d48;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
     /* Badges de Compétences */
     .badge-skill-3d {
       font-size: 0.88rem;
@@ -468,37 +563,61 @@
       </div>
     </section>
 
-    <!-- CERTIFICATS SECTION -->
+    <!-- CERTIFICATS SECTION (AVEC ICÔNES & EFFETS 3D) -->
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="certificats">
       <div class="my-auto">
         <h2 class="mb-5 font-weight-bold">Certifications</h2>
 
         <div class="row">
+          <!-- MIT MicroMasters -->
           <div class="col-md-6 mb-4">
-            <div class="p-4 bg-white rounded shadow-sm border-left border-warning" style="border-left-width: 5px !important;">
-              <h4 class="font-weight-bold mb-1">MIT MicroMasters – Supply Chain Analytics</h4>
-              <div class="text-primary font-weight-bold">Jan. 2026</div>
+            <div class="cert-card-3d">
+              <div class="cert-icon-box" style="background: #fef3c7; color: #d97706;">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h5 class="font-weight-bold mb-1 text-dark">MIT MicroMasters</h5>
+                <div class="text-primary font-weight-bold">Supply Chain Analytics (Jan. 2026)</div>
+              </div>
             </div>
           </div>
 
+          <!-- Power BI -->
           <div class="col-md-6 mb-4">
-            <div class="p-4 bg-white rounded shadow-sm border-left border-info" style="border-left-width: 5px !important;">
-              <h4 class="font-weight-bold mb-1">Power BI Data Analyst – Microsoft</h4>
-              <div class="text-info font-weight-bold">Avr. 2026</div>
+            <div class="cert-card-3d">
+              <div class="cert-icon-box" style="background: #e0f2fe; color: #0284c7;">
+                <i class="fa fa-bar-chart"></i>
+              </div>
+              <div>
+                <h5 class="font-weight-bold mb-1 text-dark">Power BI Data Analyst</h5>
+                <div class="text-info font-weight-bold">Microsoft Certification (Avr. 2026)</div>
+              </div>
             </div>
           </div>
 
+          <!-- Six Sigma -->
           <div class="col-md-6 mb-4">
-            <div class="p-4 bg-white rounded shadow-sm border-left border-success" style="border-left-width: 5px !important;">
-              <h4 class="font-weight-bold mb-1">Six Sigma Green Belt – Kennesaw State</h4>
-              <div class="text-success font-weight-bold">2024</div>
+            <div class="cert-card-3d">
+              <div class="cert-icon-box" style="background: #dcfce7; color: #16a34a;">
+                <i class="fa fa-certificate"></i>
+              </div>
+              <div>
+                <h5 class="font-weight-bold mb-1 text-dark">Six Sigma Green Belt</h5>
+                <div class="text-success font-weight-bold">Kennesaw State University (2024)</div>
+              </div>
             </div>
           </div>
 
+          <!-- PMP -->
           <div class="col-md-6 mb-4">
-            <div class="p-4 bg-white rounded shadow-sm border-left border-primary" style="border-left-width: 5px !important;">
-              <h4 class="font-weight-bold mb-1">PMP (Gestion de Projet) – Google</h4>
-              <div class="text-primary font-weight-bold">2024</div>
+            <div class="cert-card-3d">
+              <div class="cert-icon-box" style="background: #f3e8ff; color: #9333ea;">
+                <i class="fa fa-tasks"></i>
+              </div>
+              <div>
+                <h5 class="font-weight-bold mb-1 text-dark">PMP (Gestion de Projet)</h5>
+                <div class="text-primary font-weight-bold">Google Certification (2024)</div>
+              </div>
             </div>
           </div>
         </div>
@@ -506,28 +625,72 @@
       </div>
     </section>
 
-    <!-- SOFT SKILLS & LOISIRS SECTION -->
+    <!-- SOFT SKILLS & LOISIRS SECTION (AVEC ICÔNES INTERACTIVES) -->
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="softskills">
       <div class="my-auto">
         <div class="row">
+          
+          <!-- Soft Skills -->
           <div class="col-md-6 mb-4">
             <h2 class="mb-4 font-weight-bold">Soft Skills</h2>
-            <ul class="fa-ul mb-0" style="line-height: 2;">
-              <li><i class="fa-li fa fa-check-circle text-primary"></i><b>Esprit logique & Rigueur technique</b></li>
-              <li><i class="fa-li fa fa-check-circle text-primary"></i><b>Collaboration fluide & Co-construction terrain</b></li>
-              <li><i class="fa-li fa fa-check-circle text-primary"></i><b>Réactivité face aux aléas & Sens des priorités</b></li>
-              <li><i class="fa-li fa fa-check-circle text-primary"></i><b>Communication claire inter-métiers (R&D / Prod / Qualité)</b></li>
-            </ul>
+            
+            <div class="soft-skill-card">
+              <div class="soft-icon"><i class="fa fa-lightbulb-o"></i></div>
+              <div>
+                <div class="font-weight-bold text-dark">Esprit logique & Rigueur technique</div>
+              </div>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-icon"><i class="fa fa-users"></i></div>
+              <div>
+                <div class="font-weight-bold text-dark">Collaboration fluide & Co-construction terrain</div>
+              </div>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-icon"><i class="fa fa-bolt"></i></div>
+              <div>
+                <div class="font-weight-bold text-dark">Réactivité face aux aléas & Sens des priorités</div>
+              </div>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-icon"><i class="fa fa-comments"></i></div>
+              <div>
+                <div class="font-weight-bold text-dark">Communication inter-métiers (R&D/Prod/Qualité)</div>
+              </div>
+            </div>
+
           </div>
 
+          <!-- Loisirs -->
           <div class="col-md-6 mb-4">
             <h2 class="mb-4 font-weight-bold">Loisirs</h2>
-            <ul class="fa-ul mb-0" style="line-height: 2;">
-              <li><i class="fa-li fa fa-heart text-danger"></i><b>Course à pied & Musculation</b></li>
-              <li><i class="fa-li fa fa-heart text-danger"></i><b>Jeux d’échecs (stratégie)</b></li>
-              <li><i class="fa-li fa fa-heart text-danger"></i><b>Football en équipe</b></li>
-            </ul>
+            
+            <div class="hobby-card">
+              <div class="hobby-icon"><i class="fa fa-heartbeat"></i></div>
+              <div>
+                <div class="font-weight-bold text-dark">Course à pied & Musculation</div>
+              </div>
+            </div>
+
+            <div class="hobby-card">
+              <div class="hobby-icon"><i class="fa fa-trophy"></i></div>
+              <div>
+                <div class="font-weight-bold text-dark">Jeux d’échecs (Stratégie & Reflexion)</div>
+              </div>
+            </div>
+
+            <div class="hobby-card">
+              <div class="hobby-icon"><i class="fa fa-soccer-ball-o"></i></div>
+              <div>
+                <div class="font-weight-bold text-dark">Football en équipe</div>
+              </div>
+            </div>
+
           </div>
+
         </div>
       </div>
     </section>
